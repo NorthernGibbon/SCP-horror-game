@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqxmscih8jkuw"]
+
+[ext_resource type="PackedScene" uid="uid://bvw8vbbx5vrg6" path="res://assets/Ventilation_Block2.gltf" id="1_byfxt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4j4xe"]
+
+[node name="Ventilation_block2" instance=ExtResource("1_byfxt")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node/cuboid" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/cuboid/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.250213, 0)
+shape = SubResource("BoxShape3D_4j4xe")

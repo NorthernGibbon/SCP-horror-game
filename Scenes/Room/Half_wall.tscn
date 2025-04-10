@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsdl4prsijtwb"]
+
+[ext_resource type="PackedScene" uid="uid://d34hud6hvehgy" path="res://Scenes/Room/wall_1.tscn" id="1_jygeo"]
+
+[node name="Half_wall" type="Node3D"]
+
+[node name="Wall_1" parent="." instance=ExtResource("1_jygeo")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 0.225714, 0, -8.74228e-08, 0, -1, -0.1163, 0, -0.0345368)
+
+[node name="Wall_2" parent="." instance=ExtResource("1_jygeo")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 0.225714, 0, 1.74846e-07, 0, 1, -0.1163, 0, -0.373526)

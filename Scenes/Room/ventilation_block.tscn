@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ceiay4goriav4"]
+
+[ext_resource type="PackedScene" uid="uid://duf10jqnrp0pw" path="res://assets/Ventilation_Block.gltf" id="1_8rcv0"]
+
+[node name="Ventilation_block" instance=ExtResource("1_8rcv0")]

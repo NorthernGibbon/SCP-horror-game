@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d34hud6hvehgy"]
+
+[ext_resource type="PackedScene" uid="uid://b05hp47xcj2nw" path="res://assets/Lab_wall1.gltf" id="1_x324j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jbdpi"]
+size = Vector3(3.01636, 2.87207, 0.14917)
+
+[node name="Wall_1" instance=ExtResource("1_x324j")]
+
+[node name="Lab_wall1" parent="Node" index="0"]
+transform = Transform3D(1.5, 0, 0, 0, 1.35946, 0.633927, 0, -0.633927, 1.35946, 0, 0.73, 1.645)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node/Lab_wall1" index="0"]
+transform = Transform3D(1.03934, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/Lab_wall1/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.906309, -0.422619, 0, 0.422619, 0.906309, 0.00378418, 1.28111, -0.532505)
+shape = SubResource("BoxShape3D_jbdpi")

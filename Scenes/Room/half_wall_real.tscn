@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ded7xyw5embcg"]
+
+[ext_resource type="PackedScene" uid="uid://c757c6ffe3aju" path="res://assets/Half_wall.gltf" id="1_t1i4m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_33rju"]
+size = Vector3(4.14447, 0.793335, 0.35022)
+
+[node name="Half_Wall_real" instance=ExtResource("1_t1i4m")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node" index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/StaticBody3D" index="0"]
+transform = Transform3D(0.708742, 0, 0, 0, 0.708742, 0, 0, 0, 0.708742, -0.0313066, 0.28398, 0.0587548)
+shape = SubResource("BoxShape3D_33rju")
